@@ -1,0 +1,1103 @@
+{
+	Tools = ordered() {
+		SafeZoneforAd = MacroOperator {
+			Inputs = ordered() {
+				Source = InstanceInput {
+					SourceOp = "Switch1",
+					Source = "Source",
+					Page = "Controls",
+					Name = "Switch"
+				},
+				Sep1768152124679 = InstanceInput {
+					SourceOp = "Allok",
+					Source = "Sep1768152124679",
+					Page = "Controls"
+				},
+				Label1768152051447 = InstanceInput {
+					SourceOp = "Background1",
+					Source = "Label1768152051447",
+					Page = "Controls"
+				},
+				TopLeftRed = InstanceInput {
+					SourceOp = "Background1",
+					Source = "TopLeftRed",
+					Page = "Controls",
+					Name = "Red",
+					ControlGroup = 1,
+					Default = 0
+				},
+				TopLeftGreen = InstanceInput {
+					SourceOp = "Background1",
+					Source = "TopLeftGreen",
+					Page = "Controls",
+					Name = "Green",
+					ControlGroup = 1,
+					Default = 0
+				},
+				TopLeftBlue = InstanceInput {
+					SourceOp = "Background1",
+					Source = "TopLeftBlue",
+					Page = "Controls",
+					Name = "Blue",
+					ControlGroup = 1,
+					Default = 0
+				},
+				TopLeftAlpha = InstanceInput {
+					SourceOp = "Background1",
+					Source = "TopLeftAlpha",
+					Page = "Controls",
+					Name = "Alpha",
+					ControlGroup = 1,
+					Default = 1
+				},
+				Sep1768151962086 = InstanceInput {
+					SourceOp = "Allok",
+					Source = "Sep1768151962086",
+					Page = "Controls"
+				},
+				LineWidth = InstanceInput {
+					SourceOp = "Allok",
+					Source = "LineWidth",
+					Page = "Controls",
+					Default = 0.0055
+				},
+				Sep1768151967526 = InstanceInput {
+					SourceOp = "Allok",
+					Source = "Sep1768151967526",
+					Page = "Controls"
+				},
+				Label1768152024111 = InstanceInput {
+					SourceOp = "Background1_1",
+					Source = "Label1768152024111",
+					Page = "Controls"
+				},
+				TopLeftRed1 = InstanceInput {
+					SourceOp = "Background1_1",
+					Source = "TopLeftRed",
+					Page = "Controls",
+					Name = "Red",
+					ControlGroup = 2,
+					Default = 1
+				},
+				TopLeftGreen1 = InstanceInput {
+					SourceOp = "Background1_1",
+					Source = "TopLeftGreen",
+					Page = "Controls",
+					Name = "Green",
+					ControlGroup = 2,
+					Default = 0
+				},
+				TopLeftBlue1 = InstanceInput {
+					SourceOp = "Background1_1",
+					Source = "TopLeftBlue",
+					Page = "Controls",
+					Name = "Blue",
+					ControlGroup = 2,
+					Default = 0
+				},
+				TopLeftAlpha1 = InstanceInput {
+					SourceOp = "Background1_1",
+					Source = "TopLeftAlpha",
+					Page = "Controls",
+					Name = "Alpha",
+					ControlGroup = 2,
+					Default = 1
+				},
+				CreatedBymahatoalokcomnp = InstanceInput {
+					SourceOp = "Allok",
+					Source = "CreatedBymahatoalok.com.np",
+					Page = "Controls",
+					Name = "© Created By mahatoalok.com.np"
+				},
+			},
+			Outputs = {
+				MainOutput1 = InstanceOutput {
+					SourceOp = "Switch1",
+					Source = "Output",
+				}
+			},
+			ViewInfo = GroupInfo { Pos = { 0, 0 } },
+			Tools = ordered() {
+Allok = AlphaDivide {
+			CtrlWZoom = false,
+			NameSet = true,
+			Inputs = {
+				LineWidth = Input { Value = 0.0055, }
+			},
+			ViewInfo = OperatorInfo { Pos = { 1375, -247.5 } },
+			UserControls = ordered() {
+			Sep1768152124679 = {
+				LINKS_Name = "",
+				INPID_InputControl = "SeparatorControl",
+				LINKID_DataType = "Number",
+				INP_Integer = true,
+				INP_Passive = true
+			},
+			Sep1768151962086 = {
+				LINKS_Name = "",
+				INPID_InputControl = "SeparatorControl",
+				LINKID_DataType = "Number",
+				INP_Integer = true,
+				INP_Passive = true
+			},
+			LineWidth = {
+				INP_MaxAllowed = 0.200000002980232,
+				INP_Integer = false,
+				INPID_InputControl = "SliderControl",
+				INP_MaxScale = 0.200000002980232,
+				INP_Default = 0.0055,
+				INP_MinScale = 0.00100000004749745,
+				INP_MinAllowed = 0.00100000004749745,
+				LINKID_DataType = "Number",
+				INP_External = false,
+				INP_SplineType = "Default",
+				LINKS_Name = "Line Width"
+			},
+			Sep1768151967526 = {
+				LINKS_Name = "",
+				INPID_InputControl = "SeparatorControl",
+				LINKID_DataType = "Number",
+				INP_Integer = true,
+				INP_Passive = true
+			},
+			["CreatedBymahatoalok.com.np"] = {
+				INP_Integer = false,
+				LBLC_DropDownButton = false,
+				LINKID_DataType = "Number",
+				INP_External = false,
+				INPID_InputControl = "LabelControl",
+				INP_SplineType = "Default",
+				LINKS_Name = "© Created By mahatoalok.com.np"
+			},
+
+				
+				
+			}
+		},
+Merge4_1 = Merge {
+			Inputs = {
+				Background = Input {
+					SourceOp = "Merge3_1",
+					Source = "Output",
+				},
+				Foreground = Input {
+					SourceOp = "Instance_Background1_1_3",
+					Source = "Output",
+				},
+				PerformDepthMerge = Input { Value = 0, }
+			},
+			ViewInfo = OperatorInfo { Pos = { 1155, -148.5 } },
+		},
+Instance_Background1_1_3 = Background {
+			SourceOp = "Background1_1",
+			Inputs = {
+				EffectMask = Input {
+					SourceOp = "Rectangle_V3_2_1_1",
+					Source = "Mask",
+				},
+				SettingsNest = Input {
+				},
+				LayersNest = Input {
+				},
+				ImageNest = Input {
+				},
+				["Gamut.ColorSpaceNest"] = Input {
+				},
+				["Gamut.GammaSpaceNest"] = Input {
+				},
+				BackgroundNest = Input {
+				},
+				CommentsNest = Input {
+				},
+				FrameRenderScriptNest = Input {
+				},
+				StartRenderScripts = Input {
+				},
+				EndRenderScripts = Input {
+				}
+			},
+			ViewInfo = OperatorInfo { Pos = { 1155, -247.5 } },
+		},
+Rectangle_V3_2_1_1 = RectangleMask {
+			NameSet = true,
+			CustomData = { Path = { Map = { ["Setting:"] = "C:\\Users\\Admin\\Downloads\\Remaining to make Plugin\\Remaining to make Plugin\\Rectangle v3\\" } }, },
+			Inputs = {
+				ShowViewControls = Input { Value = 0, },
+				Filter = Input { Value = FuID { "Fast Gaussian" }, },
+				CapStyle = Input { Value = 0, },
+				MaskWidth = Input { Value = 1080, },
+				MaskHeight = Input { Value = 1920, },
+				PixelAspect = Input { Value = { 1, 1 }, },
+				UseFrameFormatSettings = Input { Value = 1, },
+				ClippingMode = Input { Value = FuID { "None" }, },
+				Top = Input {
+					Value = 0.5,
+					Expression = "X_Y.Y-0.5",
+				},
+				Bottom = Input {
+					Value = -0.5,
+					Expression = "X__Y.Y-0.50",
+				},
+				Left = Input {
+					Value = 0.5,
+					Expression = "X_Y.X-0.5",
+				},
+				Right = Input {
+					Value = 0.32,
+					Expression = "X__Y.X-0.50",
+				},
+				X_Y = Input { Value = { 1, 1 }, },
+				Center = Input {
+					Value = { 0.91, 0.5 },
+					Expression = "Point(Position.X+((Left+Right)/2), Position.Y+((Top+Bottom)/2))",
+				},
+				X__Y = Input { Value = { 0.82, 0 }, },
+				Width = Input {
+					Value = 0.18,
+					Expression = "abs(Left-Right)",
+				},
+				Height = Input {
+					Value = 1,
+					Expression = "abs(Top-Bottom)",
+				}
+			},
+			ViewInfo = OperatorInfo { Pos = { 1155, -321.326 } },
+			UserControls = ordered() { Position = { INPID_PreviewControl = "CrosshairControl", LINKID_DataType = "Point", ICS_ControlPage = "Controls", INPID_InputControl = "OffsetControl", CHC_Style = "NormalCross", LINKS_Name = "Position", }, Top = { INP_Integer = false, INP_Default = 0.25, ICS_ControlPage = "Controls", INPID_InputControl = "ScrewControl", LINKID_DataType = "Number", INP_SplineType = "Default", LINKS_Name = "Top", }, Bottom = { INP_Integer = false, INP_Default = -0.25, ICS_ControlPage = "Controls", INPID_InputControl = "ScrewControl", LINKID_DataType = "Number", INP_SplineType = "Default", LINKS_Name = "Bottom", }, Left = { INP_Integer = false, INP_Default = -0.25, ICS_ControlPage = "Controls", INPID_InputControl = "ScrewControl", LINKID_DataType = "Number", INP_SplineType = "Default", LINKS_Name = "Left", }, Right = { INP_MaxAllowed = 1000000, INP_Integer = false, INPID_InputControl = "ScrewControl", INP_MaxScale = 1, INP_Default = 0.25, INP_MinScale = 0, INP_MinAllowed = -1000000, LINKID_DataType = "Number", ICS_ControlPage = "Controls", INP_SplineType = "Default", LINKS_Name = "Right" }, X_Y = { INP_DefaultX = 0.25, INPID_PreviewControl = "CrosshairControl", INP_DefaultY = 0.75, LINKID_DataType = "Point", ICS_ControlPage = "Controls", INPID_InputControl = "OffsetControl", CHC_Style = "NormalCross", LINKS_Name = "← X ↑ Y", }, Center = { INPID_PreviewControl = "CrosshairControl", LINKID_DataType = "Point", ICS_ControlPage = "Controls", INPID_InputControl = "OffsetControl", CHC_Style = "Circle", LINKS_Name = "Center", }, X__Y = { INP_DefaultX = 0.75, INPID_PreviewControl = "CrosshairControl", INP_DefaultY = 0.25, LINKID_DataType = "Point", ICS_ControlPage = "Controls", INPID_InputControl = "OffsetControl", CHC_Style = "NormalCross", LINKS_Name = "→ X ↓ Y", }, Width = { INP_MaxAllowed = 1000000, INP_Integer = false, INPID_InputControl = "SliderControl", INP_MaxScale = 1, INP_Default = 0.5, INP_MinScale = 0, INP_MinAllowed = -1000000, LINKID_DataType = "Number", ICS_ControlPage = "Controls", INP_SplineType = "Default", LINKS_Name = "Width" }, Height = { INP_MaxAllowed = 1000000, INP_Integer = false, INPID_InputControl = "SliderControl", INP_MaxScale = 1, INP_Default = 0.5, INP_MinScale = 0, INP_MinAllowed = -1000000, LINKID_DataType = "Number", ICS_ControlPage = "Controls", INP_SplineType = "Default", LINKS_Name = "Height" } }
+		},
+Merge6 = Merge {
+			Inputs = {
+				Background = Input {
+					SourceOp = "Merge4_1",
+					Source = "Output",
+				},
+				Foreground = Input {
+					SourceOp = "Text1",
+					Source = "Output",
+				},
+				ApplyMode = Input { Value = FuID { "Difference" }, },
+				PerformDepthMerge = Input { Value = 0, }
+			},
+			ViewInfo = OperatorInfo { Pos = { 1430, -123.326 } },
+		},
+Rectangle_V3_2_1 = RectangleMask {
+			NameSet = true,
+			CustomData = { Path = { Map = { ["Setting:"] = "C:\\Users\\Admin\\Downloads\\Remaining to make Plugin\\Remaining to make Plugin\\Rectangle v3\\" } }, },
+			Inputs = {
+				ShowViewControls = Input { Value = 0, },
+				Filter = Input { Value = FuID { "Fast Gaussian" }, },
+				BorderWidth = Input {
+					Value = 0.0055,
+					Expression = "Rectangle_V3.BorderWidth",
+				},
+				Solid = Input { Value = 0, },
+				CapStyle = Input { Value = 0, },
+				MaskWidth = Input { Value = 1080, },
+				MaskHeight = Input { Value = 1920, },
+				PixelAspect = Input { Value = { 1, 1 }, },
+				UseFrameFormatSettings = Input { Value = 1, },
+				ClippingMode = Input { Value = FuID { "None" }, },
+				Top = Input {
+					Value = 0.5,
+					Expression = "X_Y.Y-0.5",
+				},
+				Bottom = Input {
+					Value = -0.5,
+					Expression = "X__Y.Y-0.50",
+				},
+				Left = Input {
+					Value = 0.5,
+					Expression = "X_Y.X-0.5",
+				},
+				Right = Input {
+					Value = 0.32,
+					Expression = "X__Y.X-0.50",
+				},
+				X_Y = Input { Value = { 1, 1 }, },
+				Center = Input {
+					Value = { 0.91, 0.5 },
+					Expression = "Point(Position.X+((Left+Right)/2), Position.Y+((Top+Bottom)/2))",
+				},
+				X__Y = Input { Value = { 0.82, 0 }, },
+				Width = Input {
+					Value = 0.18,
+					Expression = "abs(Left-Right)",
+				},
+				Height = Input {
+					Value = 1,
+					Expression = "abs(Top-Bottom)",
+				}
+			},
+			ViewInfo = OperatorInfo { Pos = { 1155, -49.5 } },
+			UserControls = ordered() { Position = { INPID_PreviewControl = "CrosshairControl", LINKID_DataType = "Point", ICS_ControlPage = "Controls", INPID_InputControl = "OffsetControl", CHC_Style = "NormalCross", LINKS_Name = "Position", }, Top = { INP_Integer = false, INP_Default = 0.25, ICS_ControlPage = "Controls", INPID_InputControl = "ScrewControl", LINKID_DataType = "Number", INP_SplineType = "Default", LINKS_Name = "Top", }, Bottom = { INP_Integer = false, INP_Default = -0.25, ICS_ControlPage = "Controls", INPID_InputControl = "ScrewControl", LINKID_DataType = "Number", INP_SplineType = "Default", LINKS_Name = "Bottom", }, Left = { INP_Integer = false, INP_Default = -0.25, ICS_ControlPage = "Controls", INPID_InputControl = "ScrewControl", LINKID_DataType = "Number", INP_SplineType = "Default", LINKS_Name = "Left", }, Right = { INP_MaxAllowed = 1000000, INP_Integer = false, INPID_InputControl = "ScrewControl", INP_MaxScale = 1, INP_Default = 0.25, INP_MinScale = 0, INP_MinAllowed = -1000000, LINKID_DataType = "Number", ICS_ControlPage = "Controls", INP_SplineType = "Default", LINKS_Name = "Right" }, X_Y = { INP_DefaultX = 0.25, INPID_PreviewControl = "CrosshairControl", INP_DefaultY = 0.75, LINKID_DataType = "Point", ICS_ControlPage = "Controls", INPID_InputControl = "OffsetControl", CHC_Style = "NormalCross", LINKS_Name = "← X ↑ Y", }, Center = { INPID_PreviewControl = "CrosshairControl", LINKID_DataType = "Point", ICS_ControlPage = "Controls", INPID_InputControl = "OffsetControl", CHC_Style = "Circle", LINKS_Name = "Center", }, X__Y = { INP_DefaultX = 0.75, INPID_PreviewControl = "CrosshairControl", INP_DefaultY = 0.25, LINKID_DataType = "Point", ICS_ControlPage = "Controls", INPID_InputControl = "OffsetControl", CHC_Style = "NormalCross", LINKS_Name = "→ X ↓ Y", }, Width = { INP_MaxAllowed = 1000000, INP_Integer = false, INPID_InputControl = "SliderControl", INP_MaxScale = 1, INP_Default = 0.5, INP_MinScale = 0, INP_MinAllowed = -1000000, LINKID_DataType = "Number", ICS_ControlPage = "Controls", INP_SplineType = "Default", LINKS_Name = "Width" }, Height = { INP_MaxAllowed = 1000000, INP_Integer = false, INPID_InputControl = "SliderControl", INP_MaxScale = 1, INP_Default = 0.5, INP_MinScale = 0, INP_MinAllowed = -1000000, LINKID_DataType = "Number", ICS_ControlPage = "Controls", INP_SplineType = "Default", LINKS_Name = "Height" } }
+		},
+Instance_Background1_1_5 = Background {
+			SourceOp = "Background1_1",
+			Inputs = {
+				EffectMask = Input {
+					SourceOp = "Rectangle_V3_2",
+					Source = "Mask",
+				},
+				SettingsNest = Input {
+				},
+				LayersNest = Input {
+				},
+				ImageNest = Input {
+				},
+				["Gamut.ColorSpaceNest"] = Input {
+				},
+				["Gamut.GammaSpaceNest"] = Input {
+				},
+				BackgroundNest = Input {
+				},
+				CommentsNest = Input {
+				},
+				FrameRenderScriptNest = Input {
+				},
+				StartRenderScripts = Input {
+				},
+				EndRenderScripts = Input {
+				}
+			},
+			ViewInfo = OperatorInfo { Pos = { 935, 16.5 } },
+		},
+Rectangle_V3_2 = RectangleMask {
+			NameSet = true,
+			CustomData = { Path = { Map = { ["Setting:"] = "C:\\Users\\Admin\\Downloads\\Remaining to make Plugin\\Remaining to make Plugin\\Rectangle v3\\" } }, },
+			Inputs = {
+				ShowViewControls = Input { Value = 0, },
+				Filter = Input { Value = FuID { "Fast Gaussian" }, },
+				BorderWidth = Input {
+					Value = 0.0055,
+					Expression = "Rectangle_V3.BorderWidth",
+				},
+				Solid = Input { Value = 0, },
+				CapStyle = Input { Value = 0, },
+				MaskWidth = Input { Value = 1080, },
+				MaskHeight = Input { Value = 1920, },
+				PixelAspect = Input { Value = { 1, 1 }, },
+				UseFrameFormatSettings = Input { Value = 1, },
+				ClippingMode = Input { Value = FuID { "None" }, },
+				Top = Input {
+					Value = 0.5,
+					Expression = "X_Y.Y-0.5",
+				},
+				Bottom = Input {
+					Value = -0.5,
+					Expression = "X__Y.Y-0.50",
+				},
+				Left = Input {
+					Value = -0.5,
+					Expression = "X_Y.X-0.5",
+				},
+				Right = Input {
+					Value = -0.42,
+					Expression = "X__Y.X-0.50",
+				},
+				X_Y = Input { Value = { 0, 1 }, },
+				Center = Input {
+					Value = { 0.04, 0.5 },
+					Expression = "Point(Position.X+((Left+Right)/2), Position.Y+((Top+Bottom)/2))",
+				},
+				X__Y = Input { Value = { 0.08, 0 }, },
+				Width = Input {
+					Value = 0.08,
+					Expression = "abs(Left-Right)",
+				},
+				Height = Input {
+					Value = 1,
+					Expression = "abs(Top-Bottom)",
+				}
+			},
+			ViewInfo = OperatorInfo { Pos = { 935, -49.5 } },
+			UserControls = ordered() { Position = { INPID_PreviewControl = "CrosshairControl", LINKID_DataType = "Point", ICS_ControlPage = "Controls", INPID_InputControl = "OffsetControl", CHC_Style = "NormalCross", LINKS_Name = "Position", }, Top = { INP_Integer = false, LINKS_Name = "Top", ICS_ControlPage = "Controls", INPID_InputControl = "ScrewControl", LINKID_DataType = "Number", INP_SplineType = "Default", INP_Default = 0.25, }, Bottom = { INP_Integer = false, LINKS_Name = "Bottom", ICS_ControlPage = "Controls", INPID_InputControl = "ScrewControl", LINKID_DataType = "Number", INP_SplineType = "Default", INP_Default = -0.25, }, Left = { INP_Integer = false, LINKS_Name = "Left", ICS_ControlPage = "Controls", INPID_InputControl = "ScrewControl", LINKID_DataType = "Number", INP_SplineType = "Default", INP_Default = -0.25, }, Right = { INP_MaxAllowed = 1000000, INP_Integer = false, INPID_InputControl = "ScrewControl", INP_MaxScale = 1, INP_Default = 0.25, INP_MinScale = 0, INP_MinAllowed = -1000000, LINKID_DataType = "Number", ICS_ControlPage = "Controls", INP_SplineType = "Default", LINKS_Name = "Right" }, X_Y = { INP_DefaultX = 0.25, INPID_PreviewControl = "CrosshairControl", INP_DefaultY = 0.75, LINKID_DataType = "Point", ICS_ControlPage = "Controls", INPID_InputControl = "OffsetControl", CHC_Style = "NormalCross", LINKS_Name = "← X ↑ Y", }, Center = { INPID_PreviewControl = "CrosshairControl", LINKID_DataType = "Point", ICS_ControlPage = "Controls", INPID_InputControl = "OffsetControl", CHC_Style = "Circle", LINKS_Name = "Center", }, X__Y = { INP_DefaultX = 0.75, INPID_PreviewControl = "CrosshairControl", INP_DefaultY = 0.25, LINKID_DataType = "Point", ICS_ControlPage = "Controls", INPID_InputControl = "OffsetControl", CHC_Style = "NormalCross", LINKS_Name = "→ X ↓ Y", }, Width = { INP_MaxAllowed = 1000000, INP_Integer = false, INPID_InputControl = "SliderControl", INP_MaxScale = 1, INP_Default = 0.5, INP_MinScale = 0, INP_MinAllowed = -1000000, LINKID_DataType = "Number", ICS_ControlPage = "Controls", INP_SplineType = "Default", LINKS_Name = "Width" }, Height = { INP_MaxAllowed = 1000000, INP_Integer = false, INPID_InputControl = "SliderControl", INP_MaxScale = 1, INP_Default = 0.5, INP_MinScale = 0, INP_MinAllowed = -1000000, LINKID_DataType = "Number", ICS_ControlPage = "Controls", INP_SplineType = "Default", LINKS_Name = "Height" } }
+		},
+Merge3_1 = Merge {
+			Inputs = {
+				Background = Input {
+					SourceOp = "Merge2_1",
+					Source = "Output",
+				},
+				Foreground = Input {
+					SourceOp = "Instance_Background1_1_2",
+					Source = "Output",
+				},
+				PerformDepthMerge = Input { Value = 0, }
+			},
+			ViewInfo = OperatorInfo { Pos = { 935, -148.5 } },
+		},
+Text1 = TextPlus {
+			Inputs = {
+				GlobalOut = Input { Value = 119, },
+				Width = Input { Value = 1080, },
+				Height = Input { Value = 1920, },
+				UseFrameFormatSettings = Input { Value = 1, },
+				["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+				Wrap = Input { Value = 1, },
+				Center = Input { Value = { 0.5, 0.118367346938775 }, },
+				LayoutRotation = Input { Value = 1, },
+				TransformRotation = Input { Value = 1, },
+				Softness1 = Input { Value = 1, },
+				StyledText = Input { Value = "For Ad", },
+				Font = Input { Value = "Open Sans", },
+				Style = Input { Value = "Bold", },
+				VerticalJustificationNew = Input { Value = 3, },
+				HorizontalJustificationNew = Input { Value = 3, }
+			},
+			ViewInfo = OperatorInfo { Pos = { 1375, 16.5 } },
+		},
+Merge3 = Merge {
+			Inputs = {
+				Background = Input {
+					SourceOp = "Merge2",
+					Source = "Output",
+				},
+				Foreground = Input {
+					SourceOp = "Instance_Background1_1_5",
+					Source = "Output",
+				},
+				PerformDepthMerge = Input { Value = 0, }
+			},
+			ViewInfo = OperatorInfo { Pos = { 935, 123.326 } },
+		},
+Instance_Background1_1_6 = Background {
+			SourceOp = "Background1_1",
+			Inputs = {
+				EffectMask = Input {
+					SourceOp = "Rectangle_V3_2_1",
+					Source = "Mask",
+				},
+				SettingsNest = Input {
+				},
+				LayersNest = Input {
+				},
+				ImageNest = Input {
+				},
+				["Gamut.ColorSpaceNest"] = Input {
+				},
+				["Gamut.GammaSpaceNest"] = Input {
+				},
+				BackgroundNest = Input {
+				},
+				CommentsNest = Input {
+				},
+				FrameRenderScriptNest = Input {
+				},
+				StartRenderScripts = Input {
+				},
+				EndRenderScripts = Input {
+				}
+			},
+			ViewInfo = OperatorInfo { Pos = { 1155, 16.5 } },
+		},
+Merge5 = Merge {
+			Inputs = {
+				Background = Input {
+					SourceOp = "Merge4",
+					Source = "Output",
+				},
+				Foreground = Input {
+					SourceOp = "Text1",
+					Source = "Output",
+				},
+				ApplyMode = Input { Value = FuID { "Difference" }, },
+				PerformDepthMerge = Input { Value = 0, }
+			},
+			ViewInfo = OperatorInfo { Pos = { 1430, 123.326 } },
+		},
+Switch1 = Switch {
+		UserControls = ordered() {
+			WhichInput = {
+				INPID_InputControl = "MultiButtonControl",
+				LINKS_Name = "Switch",
+				LINKID_DataType = "Number",
+				INP_Integer = false
+			}
+		},
+			Inputs = {
+				Name0 = Input { Value = "Line only", },
+				Input0 = Input {
+					SourceOp = "Merge5",
+					Source = "Output",
+				},
+				Name1 = Input { Value = "Border with BG", },
+				Input1 = Input {
+					SourceOp = "Merge6",
+					Source = "Output",
+				}
+			},
+			ViewInfo = OperatorInfo { Pos = { 1760, 123.326 } },
+			Colors = { TileColor = { R = 0.474509803921569, G = 0.658823529411765, B = 0.815686274509804 }, }
+		},
+Merge4 = Merge {
+			Inputs = {
+				Background = Input {
+					SourceOp = "Merge3",
+					Source = "Output",
+				},
+				Foreground = Input {
+					SourceOp = "Instance_Background1_1_6",
+					Source = "Output",
+				},
+				PerformDepthMerge = Input { Value = 0, }
+			},
+			ViewInfo = OperatorInfo { Pos = { 1155, 123.326 } },
+		},
+Rectangle_V3_2_2 = RectangleMask {
+			NameSet = true,
+			CustomData = { Path = { Map = { ["Setting:"] = "C:\\Users\\Admin\\Downloads\\Remaining to make Plugin\\Remaining to make Plugin\\Rectangle v3\\" } }, },
+			Inputs = {
+				ShowViewControls = Input { Value = 0, },
+				Filter = Input { Value = FuID { "Fast Gaussian" }, },
+				CapStyle = Input { Value = 0, },
+				MaskWidth = Input { Value = 1080, },
+				MaskHeight = Input { Value = 1920, },
+				PixelAspect = Input { Value = { 1, 1 }, },
+				UseFrameFormatSettings = Input { Value = 1, },
+				ClippingMode = Input { Value = FuID { "None" }, },
+				Top = Input {
+					Value = 0.5,
+					Expression = "X_Y.Y-0.5",
+				},
+				Bottom = Input {
+					Value = -0.5,
+					Expression = "X__Y.Y-0.50",
+				},
+				Left = Input {
+					Value = -0.5,
+					Expression = "X_Y.X-0.5",
+				},
+				Right = Input {
+					Value = -0.42,
+					Expression = "X__Y.X-0.50",
+				},
+				X_Y = Input { Value = { 0, 1 }, },
+				Center = Input {
+					Value = { 0.04, 0.5 },
+					Expression = "Point(Position.X+((Left+Right)/2), Position.Y+((Top+Bottom)/2))",
+				},
+				X__Y = Input { Value = { 0.08, 0 }, },
+				Width = Input {
+					Value = 0.08,
+					Expression = "abs(Left-Right)",
+				},
+				Height = Input {
+					Value = 1,
+					Expression = "abs(Top-Bottom)",
+				}
+			},
+			ViewInfo = OperatorInfo { Pos = { 935, -321.326 } },
+			UserControls = ordered() { Position = { INPID_PreviewControl = "CrosshairControl", LINKID_DataType = "Point", ICS_ControlPage = "Controls", INPID_InputControl = "OffsetControl", CHC_Style = "NormalCross", LINKS_Name = "Position", }, Top = { INP_Integer = false, LINKS_Name = "Top", ICS_ControlPage = "Controls", INPID_InputControl = "ScrewControl", LINKID_DataType = "Number", INP_SplineType = "Default", INP_Default = 0.25, }, Bottom = { INP_Integer = false, LINKS_Name = "Bottom", ICS_ControlPage = "Controls", INPID_InputControl = "ScrewControl", LINKID_DataType = "Number", INP_SplineType = "Default", INP_Default = -0.25, }, Left = { INP_Integer = false, LINKS_Name = "Left", ICS_ControlPage = "Controls", INPID_InputControl = "ScrewControl", LINKID_DataType = "Number", INP_SplineType = "Default", INP_Default = -0.25, }, Right = { INP_MaxAllowed = 1000000, INP_Integer = false, INPID_InputControl = "ScrewControl", INP_MaxScale = 1, INP_Default = 0.25, INP_MinScale = 0, INP_MinAllowed = -1000000, LINKID_DataType = "Number", ICS_ControlPage = "Controls", INP_SplineType = "Default", LINKS_Name = "Right" }, X_Y = { INP_DefaultX = 0.25, INPID_PreviewControl = "CrosshairControl", INP_DefaultY = 0.75, LINKID_DataType = "Point", ICS_ControlPage = "Controls", INPID_InputControl = "OffsetControl", CHC_Style = "NormalCross", LINKS_Name = "← X ↑ Y", }, Center = { INPID_PreviewControl = "CrosshairControl", LINKID_DataType = "Point", ICS_ControlPage = "Controls", INPID_InputControl = "OffsetControl", CHC_Style = "Circle", LINKS_Name = "Center", }, X__Y = { INP_DefaultX = 0.75, INPID_PreviewControl = "CrosshairControl", INP_DefaultY = 0.25, LINKID_DataType = "Point", ICS_ControlPage = "Controls", INPID_InputControl = "OffsetControl", CHC_Style = "NormalCross", LINKS_Name = "→ X ↓ Y", }, Width = { INP_MaxAllowed = 1000000, INP_Integer = false, INPID_InputControl = "SliderControl", INP_MaxScale = 1, INP_Default = 0.5, INP_MinScale = 0, INP_MinAllowed = -1000000, LINKID_DataType = "Number", ICS_ControlPage = "Controls", INP_SplineType = "Default", LINKS_Name = "Width" }, Height = { INP_MaxAllowed = 1000000, INP_Integer = false, INPID_InputControl = "SliderControl", INP_MaxScale = 1, INP_Default = 0.5, INP_MinScale = 0, INP_MinAllowed = -1000000, LINKID_DataType = "Number", ICS_ControlPage = "Controls", INP_SplineType = "Default", LINKS_Name = "Height" } }
+		},
+Instance_Background1_1_2 = Background {
+			SourceOp = "Background1_1",
+			Inputs = {
+				EffectMask = Input {
+					SourceOp = "Rectangle_V3_2_2",
+					Source = "Mask",
+				},
+				SettingsNest = Input {
+				},
+				LayersNest = Input {
+				},
+				ImageNest = Input {
+				},
+				["Gamut.ColorSpaceNest"] = Input {
+				},
+				["Gamut.GammaSpaceNest"] = Input {
+				},
+				BackgroundNest = Input {
+				},
+				CommentsNest = Input {
+				},
+				FrameRenderScriptNest = Input {
+				},
+				StartRenderScripts = Input {
+				},
+				EndRenderScripts = Input {
+				}
+			},
+			ViewInfo = OperatorInfo { Pos = { 935, -247.5 } },
+		},
+Left_8_P = Underlay {
+			NameSet = true,
+			ViewInfo = UnderlayInfo {
+				Pos = { 943.223, -78.0427 },
+				Size = { 172, 129.171 }
+			},
+		},
+Right_18_P = Underlay {
+			NameSet = true,
+			ViewInfo = UnderlayInfo {
+				Pos = { 1156.5, -76.6835 },
+				Size = { 172, 129.171 }
+			},
+		},
+Left_8_P_1 = Underlay {
+			NameSet = true,
+			ViewInfo = UnderlayInfo {
+				Pos = { 943.223, -349.869 },
+				Size = { 172, 129.171 }
+			},
+		},
+Right_18_P_1 = Underlay {
+			NameSet = true,
+			ViewInfo = UnderlayInfo {
+				Pos = { 1156.5, -348.509 },
+				Size = { 172, 129.171 }
+			},
+		},
+Rectangle_V3_1 = RectangleMask {
+			NameSet = true,
+			CustomData = { Path = { Map = { ["Setting:"] = "C:\\Users\\Admin\\Downloads\\Remaining to make Plugin\\Remaining to make Plugin\\Rectangle v3\\" } }, },
+			Inputs = {
+				ShowViewControls = Input { Value = 0, },
+				Filter = Input { Value = FuID { "Fast Gaussian" }, },
+				BorderWidth = Input {
+					Value = 0.0055,
+					Expression = "Rectangle_V3.BorderWidth",
+				},
+				Solid = Input { Value = 0, },
+				CapStyle = Input { Value = 0, },
+				MaskWidth = Input { Value = 1080, },
+				MaskHeight = Input { Value = 1920, },
+				PixelAspect = Input { Value = { 1, 1 }, },
+				UseFrameFormatSettings = Input { Value = 1, },
+				ClippingMode = Input { Value = FuID { "None" }, },
+				Top = Input {
+					Value = -0.5,
+					Expression = "X_Y.Y-0.5",
+				},
+				Bottom = Input { Expression = "X__Y.Y-0.50", },
+				Left = Input {
+					Value = -0.5,
+					Expression = "X_Y.X-0.5",
+				},
+				Right = Input {
+					Value = 0.5,
+					Expression = "X__Y.X-0.50",
+				},
+				X_Y = Input { Value = { 0, 0 }, },
+				Center = Input {
+					Value = { 0.5, 0.125 },
+					Expression = "Point(Position.X+((Left+Right)/2), Position.Y+((Top+Bottom)/2))",
+				},
+				X__Y = Input { Value = { 1, 0.25 }, },
+				Width = Input {
+					Value = 1,
+					Expression = "abs(Left-Right)",
+				},
+				Height = Input {
+					Value = 0.25,
+					Expression = "abs(Top-Bottom)",
+				}
+			},
+			ViewInfo = OperatorInfo { Pos = { 715, -49.5 } },
+			UserControls = ordered() { Position = { INPID_PreviewControl = "CrosshairControl", LINKID_DataType = "Point", ICS_ControlPage = "Controls", INPID_InputControl = "OffsetControl", CHC_Style = "NormalCross", LINKS_Name = "Position", }, Top = { INP_Integer = false, LINKS_Name = "Top", ICS_ControlPage = "Controls", INPID_InputControl = "ScrewControl", LINKID_DataType = "Number", INP_SplineType = "Default", INP_Default = 0.25, }, Bottom = { INP_Integer = false, LINKS_Name = "Bottom", ICS_ControlPage = "Controls", INPID_InputControl = "ScrewControl", LINKID_DataType = "Number", INP_SplineType = "Default", INP_Default = -0.25, }, Left = { INP_Integer = false, LINKS_Name = "Left", ICS_ControlPage = "Controls", INPID_InputControl = "ScrewControl", LINKID_DataType = "Number", INP_SplineType = "Default", INP_Default = -0.25, }, Right = { INP_MaxAllowed = 1000000, INP_Integer = false, INPID_InputControl = "ScrewControl", INP_MaxScale = 1, INP_Default = 0.25, INP_MinScale = 0, INP_MinAllowed = -1000000, LINKID_DataType = "Number", ICS_ControlPage = "Controls", INP_SplineType = "Default", LINKS_Name = "Right" }, X_Y = { INP_DefaultX = 0.25, INPID_PreviewControl = "CrosshairControl", INP_DefaultY = 0.75, LINKID_DataType = "Point", ICS_ControlPage = "Controls", INPID_InputControl = "OffsetControl", CHC_Style = "NormalCross", LINKS_Name = "← X ↑ Y", }, Center = { INPID_PreviewControl = "CrosshairControl", LINKID_DataType = "Point", ICS_ControlPage = "Controls", INPID_InputControl = "OffsetControl", CHC_Style = "Circle", LINKS_Name = "Center", }, X__Y = { INP_DefaultX = 0.75, INPID_PreviewControl = "CrosshairControl", INP_DefaultY = 0.25, LINKID_DataType = "Point", ICS_ControlPage = "Controls", INPID_InputControl = "OffsetControl", CHC_Style = "NormalCross", LINKS_Name = "→ X ↓ Y", }, Width = { INP_MaxAllowed = 1000000, INP_Integer = false, INPID_InputControl = "SliderControl", INP_MaxScale = 1, INP_Default = 0.5, INP_MinScale = 0, INP_MinAllowed = -1000000, LINKID_DataType = "Number", ICS_ControlPage = "Controls", INP_SplineType = "Default", LINKS_Name = "Width" }, Height = { INP_MaxAllowed = 1000000, INP_Integer = false, INPID_InputControl = "SliderControl", INP_MaxScale = 1, INP_Default = 0.5, INP_MinScale = 0, INP_MinAllowed = -1000000, LINKID_DataType = "Number", ICS_ControlPage = "Controls", INP_SplineType = "Default", LINKS_Name = "Height" } }
+		},
+Instance_Background1_1_4 = Background {
+			SourceOp = "Background1_1",
+			Inputs = {
+				EffectMask = Input {
+					SourceOp = "Rectangle_V3_1",
+					Source = "Mask",
+				},
+				SettingsNest = Input {
+				},
+				LayersNest = Input {
+				},
+				ImageNest = Input {
+				},
+				["Gamut.ColorSpaceNest"] = Input {
+				},
+				["Gamut.GammaSpaceNest"] = Input {
+				},
+				BackgroundNest = Input {
+				},
+				CommentsNest = Input {
+				},
+				FrameRenderScriptNest = Input {
+				},
+				StartRenderScripts = Input {
+				},
+				EndRenderScripts = Input {
+				}
+			},
+			ViewInfo = OperatorInfo { Pos = { 715, 16.5 } },
+		},
+Merge2 = Merge {
+			Inputs = {
+				Background = Input {
+					SourceOp = "Merge1",
+					Source = "Output",
+				},
+				Foreground = Input {
+					SourceOp = "Instance_Background1_1_4",
+					Source = "Output",
+				},
+				PerformDepthMerge = Input { Value = 0, }
+			},
+			ViewInfo = OperatorInfo { Pos = { 715, 123.326 } },
+		},
+Rectangle_V3_1_1 = RectangleMask {
+			NameSet = true,
+			CustomData = { Path = { Map = { ["Setting:"] = "C:\\Users\\Admin\\Downloads\\Remaining to make Plugin\\Remaining to make Plugin\\Rectangle v3\\" } }, },
+			Inputs = {
+				ShowViewControls = Input { Value = 0, },
+				Filter = Input { Value = FuID { "Fast Gaussian" }, },
+				CapStyle = Input { Value = 0, },
+				MaskWidth = Input { Value = 1080, },
+				MaskHeight = Input { Value = 1920, },
+				PixelAspect = Input { Value = { 1, 1 }, },
+				UseFrameFormatSettings = Input { Value = 1, },
+				ClippingMode = Input { Value = FuID { "None" }, },
+				Top = Input {
+					Value = -0.5,
+					Expression = "X_Y.Y-0.5",
+				},
+				Bottom = Input { Expression = "X__Y.Y-0.50", },
+				Left = Input {
+					Value = -0.5,
+					Expression = "X_Y.X-0.5",
+				},
+				Right = Input {
+					Value = 0.5,
+					Expression = "X__Y.X-0.50",
+				},
+				X_Y = Input { Value = { 0, 0 }, },
+				Center = Input {
+					Value = { 0.5, 0.125 },
+					Expression = "Point(Position.X+((Left+Right)/2), Position.Y+((Top+Bottom)/2))",
+				},
+				X__Y = Input { Value = { 1, 0.25 }, },
+				Width = Input {
+					Value = 1,
+					Expression = "abs(Left-Right)",
+				},
+				Height = Input {
+					Value = 0.25,
+					Expression = "abs(Top-Bottom)",
+				}
+			},
+			ViewInfo = OperatorInfo { Pos = { 715, -321.326 } },
+			UserControls = ordered() { Position = { INPID_PreviewControl = "CrosshairControl", LINKID_DataType = "Point", ICS_ControlPage = "Controls", INPID_InputControl = "OffsetControl", CHC_Style = "NormalCross", LINKS_Name = "Position", }, Top = { INP_Integer = false, LINKS_Name = "Top", ICS_ControlPage = "Controls", INPID_InputControl = "ScrewControl", LINKID_DataType = "Number", INP_SplineType = "Default", INP_Default = 0.25, }, Bottom = { INP_Integer = false, LINKS_Name = "Bottom", ICS_ControlPage = "Controls", INPID_InputControl = "ScrewControl", LINKID_DataType = "Number", INP_SplineType = "Default", INP_Default = -0.25, }, Left = { INP_Integer = false, LINKS_Name = "Left", ICS_ControlPage = "Controls", INPID_InputControl = "ScrewControl", LINKID_DataType = "Number", INP_SplineType = "Default", INP_Default = -0.25, }, Right = { INP_MaxAllowed = 1000000, INP_Integer = false, INPID_InputControl = "ScrewControl", INP_MaxScale = 1, INP_Default = 0.25, INP_MinScale = 0, INP_MinAllowed = -1000000, LINKID_DataType = "Number", ICS_ControlPage = "Controls", INP_SplineType = "Default", LINKS_Name = "Right" }, X_Y = { INP_DefaultX = 0.25, INPID_PreviewControl = "CrosshairControl", INP_DefaultY = 0.75, LINKID_DataType = "Point", ICS_ControlPage = "Controls", INPID_InputControl = "OffsetControl", CHC_Style = "NormalCross", LINKS_Name = "← X ↑ Y", }, Center = { INPID_PreviewControl = "CrosshairControl", LINKID_DataType = "Point", ICS_ControlPage = "Controls", INPID_InputControl = "OffsetControl", CHC_Style = "Circle", LINKS_Name = "Center", }, X__Y = { INP_DefaultX = 0.75, INPID_PreviewControl = "CrosshairControl", INP_DefaultY = 0.25, LINKID_DataType = "Point", ICS_ControlPage = "Controls", INPID_InputControl = "OffsetControl", CHC_Style = "NormalCross", LINKS_Name = "→ X ↓ Y", }, Width = { INP_MaxAllowed = 1000000, INP_Integer = false, INPID_InputControl = "SliderControl", INP_MaxScale = 1, INP_Default = 0.5, INP_MinScale = 0, INP_MinAllowed = -1000000, LINKID_DataType = "Number", ICS_ControlPage = "Controls", INP_SplineType = "Default", LINKS_Name = "Width" }, Height = { INP_MaxAllowed = 1000000, INP_Integer = false, INPID_InputControl = "SliderControl", INP_MaxScale = 1, INP_Default = 0.5, INP_MinScale = 0, INP_MinAllowed = -1000000, LINKID_DataType = "Number", ICS_ControlPage = "Controls", INP_SplineType = "Default", LINKS_Name = "Height" } }
+		},
+Merge2_1 = Merge {
+			Inputs = {
+				Background = Input {
+					SourceOp = "Merge1_1",
+					Source = "Output",
+				},
+				Foreground = Input {
+					SourceOp = "Instance_Background1_1_1",
+					Source = "Output",
+				},
+				PerformDepthMerge = Input { Value = 0, }
+			},
+			ViewInfo = OperatorInfo { Pos = { 715, -148.5 } },
+		},
+Instance_Background1_1_1 = Background {
+			SourceOp = "Background1_1",
+			Inputs = {
+				EffectMask = Input {
+					SourceOp = "Rectangle_V3_1_1",
+					Source = "Mask",
+				},
+				SettingsNest = Input {
+				},
+				LayersNest = Input {
+				},
+				ImageNest = Input {
+				},
+				["Gamut.ColorSpaceNest"] = Input {
+				},
+				["Gamut.GammaSpaceNest"] = Input {
+				},
+				BackgroundNest = Input {
+				},
+				CommentsNest = Input {
+				},
+				FrameRenderScriptNest = Input {
+				},
+				StartRenderScripts = Input {
+				},
+				EndRenderScripts = Input {
+				}
+			},
+			ViewInfo = OperatorInfo { Pos = { 715, -247.5 } },
+		},
+Note1 = Note {
+			Inputs = {
+				Comments = Input { Value = "This is for Ad", }
+			},
+			ViewInfo = StickyNoteInfo {
+				Pos = { 1320, 214.5 },
+				Flags = {
+					Expanded = true
+				},
+				Size = { 196, 181.364 }
+			},
+		},
+Button_25_P = Underlay {
+			NameSet = true,
+			ViewInfo = UnderlayInfo {
+				Pos = { 715, -82.5 },
+				Size = { 172, 118.62 }
+			},
+		},
+Button_25_P_1 = Underlay {
+			NameSet = true,
+			ViewInfo = UnderlayInfo {
+				Pos = { 715, -354.326 },
+				Size = { 172, 118.62 }
+			},
+		},
+Rectangle_V3 = RectangleMask {
+			CtrlWZoom = false,
+			NameSet = true,
+			CustomData = { Path = { Map = { ["Setting:"] = "C:\\Users\\Admin\\Downloads\\Remaining to make Plugin\\Remaining to make Plugin\\Rectangle v3\\" } }, },
+			Inputs = {
+				ShowViewControls = Input { Value = 0, },
+				Filter = Input { Value = FuID { "Fast Gaussian" }, },
+				BorderWidth = Input {
+					Value = 0.0055,
+					Expression = "Allok.LineWidth",
+				},
+				Solid = Input { Value = 0, },
+				CapStyle = Input { Value = 0, },
+				MaskWidth = Input { Value = 1080, },
+				MaskHeight = Input { Value = 1920, },
+				PixelAspect = Input { Value = { 1, 1 }, },
+				UseFrameFormatSettings = Input { Value = 1, },
+				ClippingMode = Input { Value = FuID { "None" }, },
+				Top = Input {
+					Value = 0.5,
+					Expression = "X_Y.Y-0.5",
+				},
+				Bottom = Input {
+					Value = 0.36,
+					Expression = "X__Y.Y-0.50",
+				},
+				Left = Input {
+					Value = -0.5,
+					Expression = "X_Y.X-0.5",
+				},
+				Right = Input {
+					Value = 0.5,
+					Expression = "X__Y.X-0.50",
+				},
+				X_Y = Input { Value = { 0, 1 }, },
+				Center = Input {
+					Value = { 0.5, 0.93 },
+					Expression = "Point(Position.X+((Left+Right)/2), Position.Y+((Top+Bottom)/2))",
+				},
+				X__Y = Input { Value = { 1, 0.86 }, },
+				Width = Input {
+					Value = 1,
+					Expression = "abs(Left-Right)",
+				},
+				Height = Input {
+					Value = 0.14,
+					Expression = "abs(Top-Bottom)",
+				}
+			},
+			ViewInfo = OperatorInfo { Pos = { 495, -49.5 } },
+			UserControls = ordered() { Position = { INPID_PreviewControl = "CrosshairControl", LINKID_DataType = "Point", ICS_ControlPage = "Controls", INPID_InputControl = "OffsetControl", CHC_Style = "NormalCross", LINKS_Name = "Position", }, Top = { INP_Integer = false, INP_Default = 0.25, ICS_ControlPage = "Controls", INPID_InputControl = "ScrewControl", LINKID_DataType = "Number", INP_SplineType = "Default", LINKS_Name = "Top", }, Bottom = { INP_Integer = false, INP_Default = -0.25, ICS_ControlPage = "Controls", INPID_InputControl = "ScrewControl", LINKID_DataType = "Number", INP_SplineType = "Default", LINKS_Name = "Bottom", }, Left = { INP_Integer = false, INP_Default = -0.25, ICS_ControlPage = "Controls", INPID_InputControl = "ScrewControl", LINKID_DataType = "Number", INP_SplineType = "Default", LINKS_Name = "Left", }, Right = { INP_MaxAllowed = 1000000, INP_Integer = false, INPID_InputControl = "ScrewControl", INP_MaxScale = 1, INP_Default = 0.25, INP_MinScale = 0, INP_MinAllowed = -1000000, LINKID_DataType = "Number", ICS_ControlPage = "Controls", INP_SplineType = "Default", LINKS_Name = "Right" }, X_Y = { INP_DefaultX = 0.25, INPID_PreviewControl = "CrosshairControl", INP_DefaultY = 0.75, LINKID_DataType = "Point", ICS_ControlPage = "Controls", INPID_InputControl = "OffsetControl", CHC_Style = "NormalCross", LINKS_Name = "← X ↑ Y", }, Center = { INPID_PreviewControl = "CrosshairControl", LINKID_DataType = "Point", ICS_ControlPage = "Controls", INPID_InputControl = "OffsetControl", CHC_Style = "Circle", LINKS_Name = "Center", }, X__Y = { INP_DefaultX = 0.75, INPID_PreviewControl = "CrosshairControl", INP_DefaultY = 0.25, LINKID_DataType = "Point", ICS_ControlPage = "Controls", INPID_InputControl = "OffsetControl", CHC_Style = "NormalCross", LINKS_Name = "→ X ↓ Y", }, Width = { INP_MaxAllowed = 1000000, INP_Integer = false, INPID_InputControl = "SliderControl", INP_MaxScale = 1, INP_Default = 0.5, INP_MinScale = 0, INP_MinAllowed = -1000000, LINKID_DataType = "Number", ICS_ControlPage = "Controls", INP_SplineType = "Default", LINKS_Name = "Width" }, Height = { INP_MaxAllowed = 1000000, INP_Integer = false, INPID_InputControl = "SliderControl", INP_MaxScale = 1, INP_Default = 0.5, INP_MinScale = 0, INP_MinAllowed = -1000000, LINKID_DataType = "Number", ICS_ControlPage = "Controls", INP_SplineType = "Default", LINKS_Name = "Height" } }
+		},
+Background1_1 = Background {
+		UserControls = ordered() {
+			Label1768152024111 = {
+				LINKS_Name = "Foreground Color",
+				INPID_InputControl = "LabelControl",
+				LINKID_DataType = "Number",
+				LBLC_DropDownButton = true,
+				LBLC_NumInputs = 4,
+				INP_External = false,
+				INP_Passive = true
+			}
+		},
+			Inputs = {
+				EffectMask = Input {
+					SourceOp = "Rectangle_V3",
+					Source = "Mask",
+				},
+				GlobalOut = Input { Value = 119, },
+				Width = Input { Value = 1080, },
+				Height = Input { Value = 1920, },
+				UseFrameFormatSettings = Input { Value = 1, },
+				["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+				TopLeftRed = Input { Value = 1, }
+			},
+			ViewInfo = OperatorInfo { Pos = { 495, 16.5 } },
+		},
+Merge1_1 = Merge {
+			Inputs = {
+				Background = Input {
+					SourceOp = "Instance_Background1",
+					Source = "Output",
+				},
+				Foreground = Input {
+					SourceOp = "Instance_Background1_1",
+					Source = "Output",
+				},
+				PerformDepthMerge = Input { Value = 0, }
+			},
+			ViewInfo = OperatorInfo { Pos = { 495, -148.5 } },
+		},
+Instance_Background1_1 = Background {
+			SourceOp = "Background1_1",
+			Inputs = {
+				EffectMask = Input {
+					SourceOp = "Rectangle_V3_3",
+					Source = "Mask",
+				},
+				SettingsNest = Input {
+				},
+				LayersNest = Input {
+				},
+				ImageNest = Input {
+				},
+				["Gamut.ColorSpaceNest"] = Input {
+				},
+				["Gamut.GammaSpaceNest"] = Input {
+				},
+				BackgroundNest = Input {
+				},
+				CommentsNest = Input {
+				},
+				FrameRenderScriptNest = Input {
+				},
+				StartRenderScripts = Input {
+				},
+				EndRenderScripts = Input {
+				}
+			},
+			ViewInfo = OperatorInfo { Pos = { 495, -247.5 } },
+		},
+Merge1 = Merge {
+			Inputs = {
+				Background = Input {
+					SourceOp = "Background1",
+					Source = "Output",
+				},
+				Foreground = Input {
+					SourceOp = "Background1_1",
+					Source = "Output",
+				},
+				PerformDepthMerge = Input { Value = 0, }
+			},
+			ViewInfo = OperatorInfo { Pos = { 495, 123.326 } },
+		},
+Rectangle_V3_3 = RectangleMask {
+			NameSet = true,
+			CustomData = { Path = { Map = { ["Setting:"] = "C:\\Users\\Admin\\Downloads\\Remaining to make Plugin\\Remaining to make Plugin\\Rectangle v3\\" } }, },
+			Inputs = {
+				ShowViewControls = Input { Value = 0, },
+				Filter = Input { Value = FuID { "Fast Gaussian" }, },
+				CapStyle = Input { Value = 0, },
+				MaskWidth = Input { Value = 1080, },
+				MaskHeight = Input { Value = 1920, },
+				PixelAspect = Input { Value = { 1, 1 }, },
+				UseFrameFormatSettings = Input { Value = 1, },
+				ClippingMode = Input { Value = FuID { "None" }, },
+				Top = Input {
+					Value = 0.5,
+					Expression = "X_Y.Y-0.5",
+				},
+				Bottom = Input {
+					Value = 0.36,
+					Expression = "X__Y.Y-0.50",
+				},
+				Left = Input {
+					Value = -0.5,
+					Expression = "X_Y.X-0.5",
+				},
+				Right = Input {
+					Value = 0.5,
+					Expression = "X__Y.X-0.50",
+				},
+				X_Y = Input { Value = { 0, 1 }, },
+				Center = Input {
+					Value = { 0.5, 0.93 },
+					Expression = "Point(Position.X+((Left+Right)/2), Position.Y+((Top+Bottom)/2))",
+				},
+				X__Y = Input { Value = { 1, 0.86 }, },
+				Width = Input {
+					Value = 1,
+					Expression = "abs(Left-Right)",
+				},
+				Height = Input {
+					Value = 0.14,
+					Expression = "abs(Top-Bottom)",
+				}
+			},
+			ViewInfo = OperatorInfo { Pos = { 495, -321.326 } },
+			UserControls = ordered() { Position = { INPID_PreviewControl = "CrosshairControl", LINKID_DataType = "Point", ICS_ControlPage = "Controls", INPID_InputControl = "OffsetControl", CHC_Style = "NormalCross", LINKS_Name = "Position", }, Top = { INP_Integer = false, INP_Default = 0.25, ICS_ControlPage = "Controls", INPID_InputControl = "ScrewControl", LINKID_DataType = "Number", INP_SplineType = "Default", LINKS_Name = "Top", }, Bottom = { INP_Integer = false, INP_Default = -0.25, ICS_ControlPage = "Controls", INPID_InputControl = "ScrewControl", LINKID_DataType = "Number", INP_SplineType = "Default", LINKS_Name = "Bottom", }, Left = { INP_Integer = false, INP_Default = -0.25, ICS_ControlPage = "Controls", INPID_InputControl = "ScrewControl", LINKID_DataType = "Number", INP_SplineType = "Default", LINKS_Name = "Left", }, Right = { INP_MaxAllowed = 1000000, INP_Integer = false, INPID_InputControl = "ScrewControl", INP_MaxScale = 1, INP_Default = 0.25, INP_MinScale = 0, INP_MinAllowed = -1000000, LINKID_DataType = "Number", ICS_ControlPage = "Controls", INP_SplineType = "Default", LINKS_Name = "Right" }, X_Y = { INP_DefaultX = 0.25, INPID_PreviewControl = "CrosshairControl", INP_DefaultY = 0.75, LINKID_DataType = "Point", ICS_ControlPage = "Controls", INPID_InputControl = "OffsetControl", CHC_Style = "NormalCross", LINKS_Name = "← X ↑ Y", }, Center = { INPID_PreviewControl = "CrosshairControl", LINKID_DataType = "Point", ICS_ControlPage = "Controls", INPID_InputControl = "OffsetControl", CHC_Style = "Circle", LINKS_Name = "Center", }, X__Y = { INP_DefaultX = 0.75, INPID_PreviewControl = "CrosshairControl", INP_DefaultY = 0.25, LINKID_DataType = "Point", ICS_ControlPage = "Controls", INPID_InputControl = "OffsetControl", CHC_Style = "NormalCross", LINKS_Name = "→ X ↓ Y", }, Width = { INP_MaxAllowed = 1000000, INP_Integer = false, INPID_InputControl = "SliderControl", INP_MaxScale = 1, INP_Default = 0.5, INP_MinScale = 0, INP_MinAllowed = -1000000, LINKID_DataType = "Number", ICS_ControlPage = "Controls", INP_SplineType = "Default", LINKS_Name = "Width" }, Height = { INP_MaxAllowed = 1000000, INP_Integer = false, INPID_InputControl = "SliderControl", INP_MaxScale = 1, INP_Default = 0.5, INP_MinScale = 0, INP_MinAllowed = -1000000, LINKID_DataType = "Number", ICS_ControlPage = "Controls", INP_SplineType = "Default", LINKS_Name = "Height" } }
+		},
+Top_14_P = Underlay {
+			NameSet = true,
+			ViewInfo = UnderlayInfo {
+				Pos = { 495, -65.1305 },
+				Size = { 172, 129.851 }
+			},
+		},
+Top_14_P_1 = Underlay {
+			NameSet = true,
+			ViewInfo = UnderlayInfo {
+				Pos = { 495, -336.956 },
+				Size = { 172, 129.851 }
+			},
+		},
+Instance_Background1 = Background {
+			SourceOp = "Background1",
+			Inputs = {
+				EffectMask = Input {
+				},
+				SettingsNest = Input {
+				},
+				LayersNest = Input {
+				},
+				ImageNest = Input {
+				},
+				["Gamut.ColorSpaceNest"] = Input {
+				},
+				["Gamut.GammaSpaceNest"] = Input {
+				},
+				BackgroundNest = Input {
+				},
+				CommentsNest = Input {
+				},
+				FrameRenderScriptNest = Input {
+				},
+				StartRenderScripts = Input {
+				},
+				EndRenderScripts = Input {
+				}
+			},
+			ViewInfo = OperatorInfo { Pos = { 330, -148.5 } },
+		},
+Background1 = Background {
+		UserControls = ordered() {
+			Label1768152051447 = {
+				LINKS_Name = "BG Color",
+				INPID_InputControl = "LabelControl",
+				LINKID_DataType = "Number",
+				LBLC_DropDownButton = true,
+				LBLC_NumInputs = 4,
+				INP_External = false,
+				INP_Passive = true
+			}
+		},
+			Inputs = {
+				GlobalOut = Input { Value = 119, },
+				Width = Input { Value = 1080, },
+				Height = Input { Value = 1920, },
+				UseFrameFormatSettings = Input { Value = 1, },
+				["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, }
+			},
+			ViewInfo = OperatorInfo { Pos = { 330, 123.326 } },
+		}
+			},
+		}
+	},
+	ActiveTool = "SafeZoneforAd"
+}

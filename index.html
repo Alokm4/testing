@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alok Plugins - Professional Tools</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Login Overlay -->
+    <div id="login-overlay" class="login-container">
+        <div class="login-card" data-tilt>
+            <h1>Alok Plugins</h1>
+            <p>Enter credentials to access realistic tools.</p>
+            <form id="login-form">
+                <div class="input-group">
+                    <input type="text" id="username" placeholder="Username" required autocomplete="off">
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="password" placeholder="Password" required>
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                </div>
+                <button type="submit" class="btn-login">
+                    <span>Enter Studio</span>
+                    <div class="liquid"></div>
+                </button>
+            </form>
+            <p id="error-msg" class="error-hidden">Invalid Credentials</p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main id="main-content" class="hidden">
+        <header>
+            <div class="logo">ALOK<span class="accent">.</span>Video Editor</div>
+            <nav>
+                <a href="#" class="active">Plugins</a>
+                <a href="#">Macros</a>
+                <a href="#">About</a>
+            </nav>
+        </header>
+
+        <section class="hero">
+            <h2>Professional<br><span class="gradient-text">DaVinci Tools</span></h2>
+            <p>Elevate your editing workflow with industry standard assets.</p>
+        </section>
+
+        <section class="grid-container">
+            <!-- Item 1 -->
+            <div class="card" data-tilt>
+                <div class="card-icon"><i class="fa-solid fa-file-zipper"></i></div>
+                <div class="card-content">
+                    <h3>Alok Plugin</h3>
+                    <p class="type">Complete Pack (Zip)</p>
+                    <button class="btn-download" data-file="Alok Plugin.zip">
+                        Download
+                    </button>
+                </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="card" data-tilt>
+                <div class="card-icon"><i class="fa-solid fa-sliders"></i></div>
+                <div class="card-content">
+                    <h3>Safe Zone for Ad</h3>
+                    <p class="type">Macro Setting</p>
+                    <button class="btn-download" data-file="Safe Zone for Ad.setting">
+                        Download
+                    </button>
+                </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="card" data-tilt>
+                <div class="card-icon"><i class="fa-solid fa-film"></i></div>
+                <div class="card-content">
+                    <h3>Safe Zone for Reel's</h3>
+                    <p class="type">Macro Setting</p>
+                    <button class="btn-download" data-file="Safe Zone for Reel's.setting">
+                        Download
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Download Popup -->
+        <div id="download-popup" class="popup hidden">
+            <div class="popup-content">
+                <div class="spinner"></div>
+                <h3>Downloading...</h3>
+                <p>Your plugin or macro is preparing to download.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Vanilla Tilt for 3D effect -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
